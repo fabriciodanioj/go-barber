@@ -1,7 +1,12 @@
+import 'reflect-metadata';
+  
 import express, { json } from 'express';
-import routes from './routes';
+
+import './database';
 
 import 'dotenv/config';
+
+import routes from './routes';
 
 const PORT = process.env.PORT || 3333;
 
